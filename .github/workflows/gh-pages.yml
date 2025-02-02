@@ -59,7 +59,7 @@ jobs:
           hugo \
             --buildDrafts --gc \
             --baseURL ${{ steps.pages.outputs.base_url }}
-            -- minify
+            --minify
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
