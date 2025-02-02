@@ -1,4 +1,4 @@
-name: Deploy Hugo Paperthin Demo to Pages
+name: Deploy Demo to Pages
 
 on:
   push:
@@ -14,7 +14,7 @@ on:
       hugoVersion:
         description: "Hugo Version"
         required: false
-        default: "0.125.7"
+        default: "0.140.7"
 
 # Allow one concurrent deployment
 concurrency:
