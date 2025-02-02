@@ -5,8 +5,8 @@ name = 'Paperthin'
 license = 'MIT'
 licenselink = 'https://github.com/bozkurtemre/hugo-Paperthin/blob/master/LICENSE'
 description = 'A simple and clean theme for Hugo'
-homepage = 'https://emreb.dev/'
-demosite = 'https://emreb.dev/'
+homepage = 'https://github.com/bozkurtemre/hugo-Paperthin/'
+demosite = 'https://demo-blog.emreb.dev/'
 tags = ['blog', 'developer', 'minimal', 'clean', 'simple', 'hugo', 'theme']
 features = ['fast', 'minimalist', 'responsive', 'blog', 'tags']
 min_version = '0.116.0'
@@ -14,4 +14,4 @@ min_version = '0.116.0'
 [author]
   name = 'Emre Bozkurt'
   homepage = 'https://emreb.dev/'
-  repo = 'https://github.com/bozkurtemre/hugo-Paperthin'
+  repo = 'https://github.com/bozkurtemre/hugo-Paperthin/'

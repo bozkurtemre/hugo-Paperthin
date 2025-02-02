@@ -38,7 +38,7 @@ theme = 'Paperthin'
 
 ## Configuration
 
-You can look for a complete explanation about all configurations from [here](https://github.com/bozkurtemre/hugo-Paperthin/blob/master/exampleSite/hugo.toml).
+You can look for a complete explanation about all configurations from [here](https://github.com/bozkurtemre/hugo-Paperthin/blob/exampleSite/hugo.toml).
 
 ## License
 
