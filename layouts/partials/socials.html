@@ -1,0 +1,35 @@
+<div class="social-icons">
+    {{ if isset .Site.Params "social_usernames" }}
+    {{ range $key, $value := .Site.Params.social_usernames }}
+    {{ if eq $key "twitter" }}
+    <a class="social-icons__link" title="{{ $key }}" href="https://x.com/{{ $value }}" target="_blank"
+        rel="me noopener">
+        <div class="social-icons__icon" style="background-image: url('/svg/{{ $key }}.svg')"></div>
+    </a>
+    {{ end }}
+    {{ if eq $key "linkedin" }}
+    <a class="social-icons__link" title="{{ $key }}" href="https://www.linkedin.com/in/{{ $value }}" target="_blank"
+        rel="me noopener">
+        <div class="social-icons__icon" style="background-image: url('/svg/{{ $key }}.svg')"></div>
+    </a>
+    {{ end }}
+    {{ if eq $key "github" }}
+    <a class="social-icons__link" title="{{ $key }}" href="https://github.com/{{ $value }}" target="_blank"
+        rel="me noopener">
+        <div class="social-icons__icon" style="background-image: url('/svg/{{ $key }}.svg')"></div>
+    </a>
+    {{ end }}
+    {{ if eq $key "medium" }}
+    <a class="social-icons__link" title="{{ $key }}" href="https://medium.com/@{{ $value }}" target="_blank"
+        rel="me noopener">
+        <div class="social-icons__icon" style="background-image: url('/svg/{{ $key }}.svg')"></div>
+    </a>
+    {{ end }}
+    {{ if eq $key "email" }}
+    <a class="social-icons__link" title="{{ $key }}" href="mailto:{{ $value }}" target="_blank" rel="me noopener">
+        <div class="social-icons__icon" style="background-image: url('/svg/{{ $key }}.svg')"></div>
+    </a>
+    {{ end }}
+    {{ end }}
+    {{ end }}
+</div>

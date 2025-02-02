@@ -1,0 +1,44 @@
+baseURL = 'https://example.com/'
+languageCode = 'en-US'
+title = 'John Doe'
+theme = 'Paperthin'
+
+[services]
+  [services.googleAnalytics]
+    id = 'G-MEASUREMENT_ID'
+
+[params]
+  name = 'John Doe'
+  title = 'Software Developer'
+  username = '@johndoe'
+  description = 'John Doe | Software Developer'
+
+  [params.social]
+    twitter = 'johndoe'
+
+  [params.social_usernames]
+    github = 'johndoe'
+    linkedin = 'johndoe'
+    medium = 'johndoe'
+    twitter = 'johndoe'
+    email = 'john@john.doe'
+
+[[menus.main]]
+name = 'Home'
+pageRef = '/'
+weight = 1
+
+[[menus.main]]
+name = 'Blog'
+pageRef = '/posts'
+weight = 2
+
+[Taxonomies]
+  tag = 'tags'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    noClasses = false

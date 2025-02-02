@@ -1,0 +1,49 @@
+{{ define "extraCSS" }}
+{{- with resources.Get "css/posts.css" }}
+{{- if eq hugo.Environment "development" }}
+<link rel="stylesheet" href="{{ .RelPermalink }}">
+{{- else }}
+{{- with . | minify | fingerprint }}
+<link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+{{- end }}
+{{- end }}
+{{- end }}
+{{ end }}
+
+{{ define "main" }}
+{{ .Content }}
+<div class="post-list__container">
+  <ul class="post-list">
+    <div class="blog__header">
+      <h1 class="blog__term">{{ .Page.Title }}</h1>
+      <a class="social-icons__link" title="RSS" href="index.xml" target="_blank" rel="me noopener">
+        <div class="social-icons__icon" style="background-image: url('/svg/rss.svg')"></div>
+      </a>
+    </div>
+    {{ range .Pages }}
+    <li class="post">
+      <div class="post__header">
+        <time class="post__date" datetime="{{ .Date.Format " 2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format "Jan 2 2006" }}</time>
+        <h2 class="post__title">
+          <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+        </h2>
+        <ul class="tags__list">
+          {{ range .Params.tags }}
+          <li class="tag__item">
+            <a class="tag__link" href="/tags/{{ . | urlize }}">{{ . }}</a>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+    </li>
+    {{ end }}
+  </ul>
+  <ul class="tags__list">
+    {{ range .Site.Taxonomies.tags }}
+    <li class="tag__item">
+      <a class="tag__link" href="{{ .Page.Permalink }}">{{ .Page.Title }} ({{ .Count }})</a>
+    </li>
+    {{ end }}
+  </ul>
+</div>
+{{ end }}

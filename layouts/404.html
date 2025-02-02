@@ -1,0 +1,18 @@
+{{ define "extraCSS" }}
+{{- with resources.Get "css/404.css" }}
+{{- if eq hugo.Environment "development" }}
+<link rel="stylesheet" href="{{ .RelPermalink }}">
+{{- else }}
+{{- with . | minify | fingerprint }}
+<link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+{{- end }}
+{{- end }}
+{{- end }}
+{{ end }}
+
+{{ define "main" }}
+{{ .Content }}
+<article>
+<h1>One Page to Rule Them All... But Not This One</h1>
+</article>
+{{ end }}

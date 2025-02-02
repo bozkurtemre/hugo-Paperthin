@@ -1,0 +1,22 @@
+{{ define "extraCSS" }}
+{{- with resources.Get "css/main.css" }}
+{{- if eq hugo.Environment "development" }}
+<link rel="stylesheet" href="{{ .RelPermalink }}">
+{{- else }}
+{{- with . | minify | fingerprint }}
+<link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+{{- end }}
+{{- end }}
+{{- end }}
+{{ end }}
+
+{{ define "main" }}
+<div class="splash-container">
+    <div class="splash">
+        <h1>{{ .Site.Params.Name }}<span class="fancy">.</span></h1>
+        <span class="handle">{{ .Site.Params.Username }}</span>
+        <h2>{{ .Site.Params.Title }}</h2>
+        {{ partial "socials.html" . }}
+    </div>
+</div>
+{{ end }}
