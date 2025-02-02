@@ -27,7 +27,7 @@ A hyper-minimal Hugo theme designed for developers who appreciate clean, distrac
 1. Add the theme as a Git submodule:
 
 ```bash
-git submodule add https:// github.com/bozkurtemre/hugo-Paperthin.git themes/Paperthin
+git submodule add https://github.com/bozkurtemre/hugo-Paperthin.git themes/Paperthin
 ```
 
 2. Configure your `hugo.toml`:
