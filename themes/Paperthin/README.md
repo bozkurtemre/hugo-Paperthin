@@ -7,7 +7,7 @@ A hyper-minimal Hugo theme designed for developers who appreciate clean, distrac
 ![code-size](https://img.shields.io/github/languages/code-size/bozkurtemre/hugo-Paperthin)
 [![X (formerly Twitter) URL](https://img.shields.io/badge/-Share%20on%20X-gray?style=flat&logo=x)](https://x.com/intent/tweet/?text=Checkout%20Hugo%20Paperthin%20%E2%9C%A8%0AA%20fast,%20clean,%20responsive%20Hugo%20theme.&url=https://github.com/bozkurtemre/hugo-Paperthin&hashtags=Hugo,Paperthin)
 
-![Screenshot_1](https://i.imgur.com/SJQXpPR.jpeg)
+![Screenshot_1](https://i.imgur.com/qk9YkOH.jpeg)
 
 ## Features
 
@@ -27,7 +27,7 @@ A hyper-minimal Hugo theme designed for developers who appreciate clean, distrac
 1. Add the theme as a Git submodule:
 
 ```bash
-git submodule add https:// github.com/bozkurtemre/hugo-Paperthin.git themes/Paperthin
+git submodule add https://github.com/bozkurtemre/hugo-Paperthin.git themes/Paperthin
 ```
 
 2. Configure your `hugo.toml`:
@@ -38,7 +38,7 @@ theme = 'Paperthin'
 
 ## Configuration
 
-You can look for a complete explanation about all configurations from [here](https://github.com/bozkurtemre/hugo-Paperthin/blob/master/exampleSite/hugo.toml).
+You can look for a complete explanation about all configurations from [here](https://github.com/bozkurtemre/hugo-Paperthin/blob/exampleSite/hugo.toml).
 
 ## License
 
