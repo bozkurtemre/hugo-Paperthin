@@ -25,7 +25,7 @@
       <div class="post__header">
         <time class="post__date" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format "Jan 2 2006" }}</time>
         <h2 class="post__title">
-          <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+          <a href="{{ .RelPermalink }}">{{ .LinkTitle }} · {{ printf "%d min" .ReadingTime }}</a>
         </h2>
         <ul class="tags__list">
           {{ range .Params.tags }}
