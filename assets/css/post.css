@@ -539,6 +539,11 @@ pre[class*=language-] {
     font-size: .8rem
 }
 
+.post__meta {
+    color: #9b9b9b;
+    font-size: .8rem
+}
+
 .post__footer {
     padding-top: 3rem
 }

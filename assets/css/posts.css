@@ -411,6 +411,11 @@ main {
     font-size: .8rem
 }
 
+.post__meta {
+    color: #9b9b9b;
+    font-size: .8rem
+}
+
 .tags__list {
     list-style: none;
     margin: 0;
