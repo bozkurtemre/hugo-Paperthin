@@ -5,6 +5,8 @@ on:
     paths-ignore:
       - "LICENSE"
       - "README.md"
+      - ".gitignore"
+      - ".gitmodules"
     branches:
       - master
       - exampleSite

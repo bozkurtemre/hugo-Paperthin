@@ -1,0 +1,3 @@
+[submodule "themes/Paperthin"]
+	path = themes/Paperthin
+	url = https://github.com/bozkurtemre/hugo-Paperthin.git
